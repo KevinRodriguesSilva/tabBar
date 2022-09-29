@@ -14,21 +14,21 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-          <Tab.Screen name="home" component={Home}
+          <Tab.Screen name="Inicio" component={Home}
           options = {{
              tabBarIcon : ({color, size}) => {
                return <Entypo name="home" size={size} color={color} />
              }
           }}
           />
-          <Tab.Screen name="contato" component={Contato} 
+          <Tab.Screen name="Produtos" component={Contato} 
           options = {{
             tabBarIcon : ({color, size}) => {
               return <Entypo name="bell" size={size} color={color} />
             }
           }}
           />
-          <Tab.Screen name="sobre" component={Sobre} />
+          <Tab.Screen name="Sobre" component={Sobre} />
       </Tab.Navigator>
     </NavigationContainer>
   );
